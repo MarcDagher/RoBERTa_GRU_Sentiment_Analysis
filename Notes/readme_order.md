@@ -1,8 +1,6 @@
-# What is sentiment analysis
-Sentiment analysis uses natural language processing to classify sentences according to their sentiment. In this repository, 3 models were trained using the IMDB Dataset, where sentences are classified into two categories: positive and negative.
-
-# Objective of this page
-The objective of this project is to build, test, and compare 3 models on sentiment analysis of reviews.
+# What is sentiment analysis + Objective of this page
+Sentiment analysis uses natural language processing to classify sentences according to their sentiment. In this repository, three models were trained using the IMDb dataset, where sentences are classified into two categories: positive and negative.
+The objective of this project is to build, test, and compare 3 sentiment analysis models.
 
 # Summary of the work and results
 Finding the best model is not a simple task. It requires testing multiple models and choosing the best one. For this reason, I chose to train 2 simple machine learning models and test their performence, then move on to build a more advanced deep learning model and test its performence. The first 2 models I were SGDClassifiers with log_loss being their loss function, making them logistic regression models. The first model was trained using a bag of words approach and the second model was trained using an ngram approach of ngrams ranging from 1-2 words. The third model implements the architecture proposed in the paper. This architecture uses RoBERTa with a GRU and 2 dense layers. The acheived overall accuracies by these models were: 83% accuracy for bag of words model, 85% accuracy for ngram model, and 94% accuracy for RoBERTa GRU model. The RoBERTa GRU model has the highest accuracy and best fitted algorithm for prediction of positive/negative reviews.
