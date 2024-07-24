@@ -30,8 +30,10 @@ For this project, the third and final model used was the RoBERTa GRU architectur
 ### RoBERTa GRU vs Logistic Regression with BoW and N-Grams
 In order to further test the 3 models, I wrote a few reviews and tested the models on these reviews.
 
+![Screenshot of reviews](https://github.com/MarcDagher/RoBERTa_GRU_Sentiment_Analysis/blob/main/Screenshots/reviews.png)
+
 --- Show Image of reviews written, and show outputs of the models ---
 
-We can see that the RoBERTa GRU model got all the classifications correct, however; the linear regression models trained on Bag of Words and NGrams failed to correctly classify some of the reviews. The logistic regression models seem to struggle when the reviews are short and simple, unlike the ones it was trained on, and since the model was only trained on the frequency of word counts, it fails to capture meaning and context of the words. On the other hand, RoBERTa GRU is a much more complex model that uses pretrained embeddings which have been trained on a very large corpus of text. Therefore it is expected for the RoBERTa GRU model to be accurate after training it on a downstream task. This also shows the effectiveness of attention mechanisms and transformer models in NLP tasks.
+We can see that the RoBERTa GRU model correctly classified all the reviews. However, the logistic regression models trained on Bag of Words and NGrams failed to classify some reviews correctly. The logistic regression models seem to struggle with short and simple reviews, unlike the ones they were trained on. Since these models rely solely on word count frequency, they fail to capture the meaning and context of the words. On the other hand, the RoBERTa GRU model is much more complex and uses pretrained embeddings trained on a very large corpus of text. Therefore, it is expected for the RoBERTa GRU model to be accurate after being trained on a downstream task. This also demonstrates the effectiveness of attention mechanisms and transformer models in NLP tasks.
 
 [Full Model Comparison](https://github.com/MarcDagher/RoBERTa_GRU_Sentiment_Analysis/blob/main/Model%20Training/test_models.ipynb)
