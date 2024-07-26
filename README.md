@@ -1,4 +1,4 @@
-<h1 align="center">Sentiment Analysis using RoBERTa-GRU and Logistic Regression</h1>
+<h1 align="center" style="color: red;">Sentiment Analysis using RoBERTa-GRU and Logistic Regression</h1>
 
 ### Objective
 Sentiment analysis uses natural language processing to classify a sentence according to the emotions expressed in it. In this repository, three models were trained using the IMDb dataset, where sentences are classified into two categories: positive and negative.
