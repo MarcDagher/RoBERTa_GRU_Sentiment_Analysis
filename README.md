@@ -37,4 +37,4 @@ In order to further test the 3 models, I wrote a few reviews and tested the mode
 
 We can see that the RoBERTa GRU model correctly classified all the reviews. However, the logistic regression models trained on Bag of Words and NGrams failed to classify some reviews correctly. The logistic regression models seem to struggle with short and simple reviews, unlike the ones they were trained on. Since these models rely solely on word count frequency, they fail to capture the meaning and context of the words. On the other hand, the RoBERTa GRU model is much more complex and uses pretrained embeddings trained on a very large corpus of text. Therefore, it is expected for the RoBERTa GRU model to be accurate after being trained on a downstream task. This also demonstrates the effectiveness of attention mechanisms and transformer models in NLP tasks.
 
-[Full Model Comparison](https://github.com/MarcDagher/RoBERTa_GRU_Sentiment_Analysis/blob/main/Model%20Training/test_models.ipynb)
+[Full Model Comparison](https://github.com/MarcDagher/RoBERTa_GRU_Sentiment_Analysis/blob/main/test_models.ipynb)
